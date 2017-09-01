@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">學前語文秘笈</string>
+
+    <string name="facebook_app_id">1567370696906082</string>
+    <string name="dont_show_again">下次不要顯示</string>
+    <string name="font_size">字體大小</string>
+    <string name="facebook_share">Facebook 分享</string>
+    <string name="share">分享</string>
+
+    <string name="score_zero">000000</string>
+    <string name="sahk">有關香港耀能協會</string>
+    <string name="how_to_use">認識學前語文秘笈</string>
+    <string name="parent">家長必讀</string>
+    <string name="privacy">私隱政策</string>
+    <string name="disclaimer">使用條款</string>
+    <string name="copyright">版權及知識產權</string>
+    <string name="browse">無障礙瀏覽</string>
+    <string name="how_to_useXX">如何使用「學前語文秘笈」？</string>
+    <string name="survey">問卷調查 [獎賞200 分]</string>
+    <string name="attention">注意</string>
+    <string name="server_connection_fail">伺服器連線失敗</string>
+    <string name="fetching_version_information">正在取得版本資訊</string>
+    <string name="retry">重試</string>
+    <string name="check_version">正在檢查版本</string>
+    <string name="downloading">下載中</string>
+    <string name="readme">說明</string>
+    <string name="new_comer">新丁禮物</string>
+    <string name="love_this_game">您喜歡這個遊戲的程度</string>
+</resources>

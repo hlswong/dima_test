@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sahk.earlyliteracy.widgets.CustomTextView
+        android:id="@+id/customTextViewTitle"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x95"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/t"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x36"
+        app:style="medium" />
+
+    <LinearLayout
+        app:layout_widthPercent="60%"
+        app:layout_heightPercent="50%"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/ultra_dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/imageButtonVideoTutorial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normal_dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:contentDescription="影片教學"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonGame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/normal_dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:contentDescription="趣味遊戲 《學前語文秘笈》流動程式根據萬維網聯盟 （W3C）《無障礙網頁內容指引》（WCAG） 2.0 AA級別而編寫，然而本流動程式有一些遊戲及互動音效，未能完全符合無障礙網頁級別標準的功能。如閣下有任何查詢，或於使用此程式時遇到任何困難或障礙，請電郵至 ho@sahk1963.org.hk。"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

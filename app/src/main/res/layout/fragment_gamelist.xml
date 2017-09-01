@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sahk.earlyliteracy.widgets.CustomTextView
+        android:id="@+id/customTextViewTitle"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x95"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/t"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x36"
+        app:style="medium" />
+
+    <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+        android:id="@+id/featureCoverFlow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        app:coverWidth="@dimen/x258"
+        app:coverHeight="@dimen/x120"
+        app:maxScaleFactor="1.5"
+        app:reflectionGap="0px"
+        app:rotationThreshold="0.9"
+        app:scalingThreshold="0.9"
+        app:reflectionOpacity="0"
+        app:spacing="0.5" />
+
+    <TextSwitcher
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/mini_dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonArrowLeft"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:background="@null"
+            android:src="@drawable/button_arrow_left"
+            android:contentDescription="上一個遊戲"
+            tools:ignore="ContentDescription" />
+
+        <com.sahk.earlyliteracy.widgets.CustomTextView
+            android:id="@+id/customTextViewPage"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/x20" />
+
+        <ImageButton
+            android:id="@+id/imageButtonArrowRight"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:background="@null"
+            android:contentDescription="下一個遊戲"
+            android:src="@drawable/button_arrow_right"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</RelativeLayout>

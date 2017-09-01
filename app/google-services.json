@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "474095424638",
+    "project_id": "firebase-early-literacy"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474095424638:android:647992a3aee405eb",
+        "android_client_info": {
+          "package_name": "com.sahk.earlyliteracy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgdMPYEVHbUAUXlshoTdUhmVcS-Fy5Rvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-86661316-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

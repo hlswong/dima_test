@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg03">
+
+    <com.sahk.earlyliteracy.widgets.CustomTextView
+        android:id="@+id/customTextViewTitle"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x95"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/t"
+        android:gravity="center"
+        android:text="@string/disclaimer"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x36"
+        app:style="medium" />
+
+    <WebView
+        android:id="@+id/webViewDisclaimer"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="80%"
+        android:layout_above="@+id/imageButtonAgree"
+        android:layout_below="@+id/customTextViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mini_dp"
+        app:layout_marginTopPercent="6%"
+        app:layout_marginLeftPercent="15%"
+        app:layout_marginRightPercent="18%"
+        android:background="@android:color/transparent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxShowDisclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/imageButtonAgree"
+        android:layout_alignLeft="@+id/webViewDisclaimer"
+        android:layout_alignStart="@+id/webViewDisclaimer"
+        android:layout_alignTop="@+id/imageButtonAgree"
+        android:layout_toLeftOf="@+id/imageButtonAgree"
+        android:layout_toStartOf="@+id/imageButtonAgree"
+        android:gravity="center_vertical"
+        android:text="@string/dont_show_again"
+        android:contentDescription="@string/dont_show_again"
+        android:textSize="@dimen/x18" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAgree"
+        app:layout_widthPercent="20%"
+        app:layout_aspectRatio="300%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:contentDescription="同意及繼續"
+        android:src="@drawable/button_agree"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/wvAdv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+        <ImageButton
+            android:id="@+id/imageButtonClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/mini_dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_close"
+            android:contentDescription="關閉"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

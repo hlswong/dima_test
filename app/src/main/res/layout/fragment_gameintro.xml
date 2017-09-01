@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sahk.earlyliteracy.widgets.CustomTextView
+        android:id="@+id/customTextViewTitle"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x95"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/t"
+        android:gravity="center"
+        android:text="@string/readme"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x36"
+        app:style="medium" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/customTextViewTitle"
+        app:layout_marginLeftPercent="16%"
+        app:layout_marginRightPercent="16%"
+        tools:ignore="ContentDescription"
+        app:layout_marginBottomPercent="5%"
+        >
+        <ImageView
+            android:id="@+id/imageViewIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:ignore="ContentDescription"
+            />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButtonStart"
+        app:layout_widthPercent="10%"
+        app:layout_aspectRatio="100%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/large_dp"
+        app:layout_marginRightPercent="5%"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/button_start"
+        android:contentDescription="開始"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDownload"
+        app:layout_widthPercent="70%"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#EEFFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/mini_dp"
+        android:visibility="gone"
+        >
+
+        <com.sahk.earlyliteracy.widgets.CustomTextView
+            android:id="@+id/customTextViewDownload"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_sp"
+            android:text="遊戲下載中..."
+            android:gravity="center"
+            app:style="medium" />
+
+        <ProgressBar
+            android:id="@+id/progressBarDownload"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

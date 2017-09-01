@@ -1,0 +1,8 @@
+@page { margin-left: 3.18cm; margin-right: 3.18cm; margin-top: 1cm; margin-bottom: 1cm }
+p { margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left; orphans: 0; widows: 0 }
+a:link { color: blue; text-decoration: none }
+.cjk { font-family: "新細明體" }
+li {text-align:justify;}
+.large div,.large  p,.large  li {line-height: 30px; font-size: 20px;}
+.medium div,.medium  p,.medium  li {line-height: 24px; font-size: 16px;}
+.small div,.small  p,.small  li {line-height: 20px; font-size: 12px;}

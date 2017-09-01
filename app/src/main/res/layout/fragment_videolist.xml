@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sahk.earlyliteracy.widgets.CustomTextView
+        android:id="@+id/customTextViewTitle"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x95"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/t"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/x36"
+        app:style="medium" />
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x120"
+        android:layout_marginRight="@dimen/x120"
+        android:layout_marginTop="@dimen/x90">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVideoList1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_heightPercent="50%">
+
+            <ImageButton
+                android:id="@+id/imageButtonVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/mini_dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:contentDescription="影片"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/imageButtonQA1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/mini_dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:contentDescription="考考你初階"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVideoList2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutVideoList1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_heightPercent="50%">
+
+            <ImageButton
+                android:id="@+id/imageButtonSong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/mini_dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:contentDescription="兒歌"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/imageButtonQA2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/mini_dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:contentDescription="考考你進階"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

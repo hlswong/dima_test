@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_settings">
+
+    <com.sahk.earlyliteracy.widgets.NonSwipeableViewPager
+        android:id="@+id/viewPagerSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.sahk.earlyliteracy.widgets.NonSwipeableViewPager>
+
+    <ImageButton
+        android:id="@+id/imageButtonClose"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_close"
+        android:contentDescription="關閉"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNext"
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="15%"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginBottomPercent="10%"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:contentDescription="繼續"
+        android:src="@drawable/button_continue"
+        />
+</android.support.percent.PercentRelativeLayout>

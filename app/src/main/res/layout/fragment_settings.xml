@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_settings">
+
+    <ImageView
+        android:id="@+id/imageViewTitle"
+        android:layout_width="@dimen/x250"
+        android:layout_height="@dimen/x95"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/title_settings"
+        tools:ignore="ContentDescription" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginBottomPercent="10%"
+        app:layout_marginLeftPercent="20%"
+        app:layout_marginRightPercent="20%"
+        app:layout_marginTopPercent="30%">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFontSize"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textViewFontSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/font_size"
+                    android:contentDescription="@string/font_size"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupFont"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButtonFontSmall"
+                        android:layout_width="54dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:contentDescription="轉為小字體"
+                        android:background="@drawable/button_font_small"
+                        android:button="@android:color/transparent" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonFontNormal"
+                        android:layout_width="54dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:contentDescription="轉為中字體"
+                        android:background="@drawable/button_font_normal"
+                        android:button="@android:color/transparent" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonFontLarge"
+                        android:layout_width="54dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:contentDescription="轉為大字體"
+                        android:background="@drawable/button_font_large"
+                        android:button="@android:color/transparent" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFacebookShare"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@+id/linearLayoutFontSize"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textViewFacebookShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/share"
+                    android:contentDescription="@string/share"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:id="@+id/buttonFacebookShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/button_facebook_share"
+                    android:text="@string/facebook_share"
+                    android:contentDescription="@string/facebook_share"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewSAHK"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/linearLayoutFacebookShare"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="@string/sahk"
+                android:contentDescription="@string/sahk"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewHowToUse"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textViewSAHK"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="認識學前語文秘笈"
+                android:contentDescription="認識學前語文秘笈"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewParent"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textViewHowToUse"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="家長必讀"
+                android:contentDescription="家長必讀"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textViewParent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="@string/privacy"
+                android:contentDescription="@string/privacy"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewDisclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textViewPrivacy"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="@string/disclaimer"
+                android:contentDescription="@string/disclaimer"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewCopyright"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textViewDisclaimer"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="版權及知識產權"
+                android:contentDescription="版權及知識產權"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewBrowse"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textViewCopyright"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="無障礙瀏覽"
+                android:contentDescription="無障礙瀏覽"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/textViewSurvey"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@id/textViewBrowse"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:drawableEnd="@drawable/right"
+                android:drawableRight="@drawable/right"
+                android:gravity="center_vertical"
+                android:text="@string/survey"
+                android:contentDescription="@string/survey"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>

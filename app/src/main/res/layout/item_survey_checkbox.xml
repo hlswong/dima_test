@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="20%"
+        app:layout_marginRightPercent="20%"
+        app:layout_marginTopPercent="25%"
+        >
+    <TextView
+        android:id="@+id/surveyQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:padding="8dp"
+        android:text="1.使用這個應用程式的孩子的年齡是："
+        />
+
+
+        <CheckBox
+            android:text="a."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_below="@+id/surveyQuestion"
+            android:id="@+id/surveyOpt1" />
+        <CheckBox
+            android:text="b."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_below="@+id/surveyOpt1"
+            android:id="@+id/surveyOpt2" />
+        <CheckBox
+            android:text="c."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_below="@+id/surveyOpt2"
+            android:id="@+id/surveyOpt3" />
+        <CheckBox
+            android:text="d."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_below="@+id/surveyOpt3"
+            android:id="@+id/surveyOpt4" />
+
+
+</RelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

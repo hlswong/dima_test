@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg02">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x35"
+        android:layout_marginRight="@dimen/x35">
+
+        <LinearLayout
+            android:id="@+id/topMenuSpace"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            app:layout_heightPercent="20%">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTheme1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topMenuSpace"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_heightPercent="40%">
+
+            <ImageButton
+                android:id="@+id/imageButtonBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_body"
+                android:contentDescription="我的身體"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+            <ImageButton
+                android:id="@+id/imageButtonFamily"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_family"
+                android:contentDescription="我的家人"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSchool"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_school"
+                android:contentDescription="我的學校"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTheme2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutTheme1"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_heightPercent="40%">
+
+            <ImageButton
+                android:id="@+id/imageButtonRead"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_read"
+                android:contentDescription="我愛閱讀"
+                tools:ignore="ContentDescription" />
+
+
+            <ImageButton
+                android:id="@+id/imageButtonNature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_nature"
+                android:contentDescription="大自然真美麗"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_cycle"
+                android:contentDescription="環保"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+</RelativeLayout>

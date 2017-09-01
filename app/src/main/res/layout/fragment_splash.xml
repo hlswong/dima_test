@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg01"
+    >
+
+    <ImageButton
+        android:id="@+id/imageButtonStart"
+        app:layout_widthPercent="9%"
+        app:layout_heightPercent="16%"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginBottomPercent="15%"
+        android:background="@drawable/button_start"
+        android:scaleType="fitCenter"
+        android:contentDescription="開始"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginBottomPercent="15%"
+        android:background="#AAFFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/normal_dp"
+        android:visibility="gone">
+
+        <com.sahk.earlyliteracy.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_version"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/content_sp"
+            app:style="medium" />
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>
